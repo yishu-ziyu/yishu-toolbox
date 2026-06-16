@@ -12,6 +12,9 @@ dist/
 venv/
 env/
 
+# uv ephemeral test artifacts (project itself is setuptools, not uv-managed)
+uv.lock
+
 # Secrets
 .env
 .env.local
