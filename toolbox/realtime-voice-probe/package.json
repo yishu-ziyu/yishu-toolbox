@@ -1,0 +1,14 @@
+{
+  "name": "realtime-voice-probe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local BYOK probe for StepFun Realtime voice conversations.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

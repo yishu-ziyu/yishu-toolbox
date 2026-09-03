@@ -7,6 +7,7 @@
 | 工具 | 简介 | 技术栈 |
 |---|---|---|
 | [`ticket`](./toolbox/ticket) | 12306 实时余票查询 CLI，22 个 TDD 测试全过 | Python · requests |
+| [`realtime-voice-probe`](./toolbox/realtime-voice-probe) | 验证 Step Plan `stepaudio-2.5-realtime` 的 BYOK 实时语音通话链路 | Node.js · WebSocket |
 
 ## 目录结构
 
@@ -16,11 +17,15 @@ yishu-toolbox/
 ├── LICENSE          # MIT
 ├── .gitignore
 └── toolbox/         # 所有工具的容器
-    └── ticket/      # 12306 查票工具
-        ├── pyproject.toml
-        ├── README.md
-        ├── ticket/  # 源码
-        └── tests/
+    ├── ticket/      # 12306 查票工具
+    │   ├── pyproject.toml
+    │   ├── README.md
+    │   ├── ticket/  # 源码
+    │   └── tests/
+    └── realtime-voice-probe/ # StepFun 实时语音能力探针
+        ├── package.json
+        ├── server.mjs
+        └── public/
 ```
 
 ## 新增工具
